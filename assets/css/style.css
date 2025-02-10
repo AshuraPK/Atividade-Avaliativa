@@ -1,0 +1,324 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+
+     
+}
+header nav{
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{ 
+    text-decoration: none; 
+    color: goldenrod;
+    font-weight: bold;
+    cursor: pointer; /* muda o designe do curso para uma mão com o dedo indicador estendido  */
+    width: 100px;
+    margin-right: center;
+}
+
+.menu, .perfil{ 
+    list-style: none; 
+    display: flex;
+    gap: 5px;
+} 
+
+.menu li a, .perfil li a{ 
+    text-decoration: none;
+    color:goldenrod;
+    padding:8px;
+    border-radius: 8px;
+}
+
+.menu li a:hover, .perfil li a:hover{
+    background-color: #d4d6d6;
+    color: rgb(7, 0, 0);
+}
+
+button.perfil{
+    border: none;
+    font-size: 2rem;
+    padding: 8px;
+    color: #000000;
+    background-color: inherit;
+    /* background color nao aceita o none ou hidden */
+    /* o inherit resetar para um valor zero tudo que tiver */
+    /* none esconde / remove */
+    /* hidden */
+}
+
+div.perfil{
+    background-color: #1b1111;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* left para o menu abrir da esquerda para direita */
+    z-index:1 ;
+    /* quanto maior esse valor mais a frente ele vai ficar */
+    width: 0;
+    overflow-x: hidden;
+    /* serve para ocultar / prensar o dimensionando em largura todo que estiver no menu  */
+    padding-top: 60px;
+    transition: 0.5s;
+    
+}
+
+div.perfil a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 8px 8px 32px;
+    display: block;
+    transition: 0.3s;
+    color: #d9d9d9;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+ 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #585555;
+    margin: 0;
+}
+ 
+header {
+    background-color: #d1cccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.sobre-empresa {
+    display: flex;
+    padding: 20px;
+    gap: 2rem;
+    background-color: #d1cccc;
+    margin: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.foto-sobre {
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #111111;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.sobre-empresa h2 {
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+.grupo-cards {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.card {
+    flex: 1;
+    background: #d1cccc;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+}
+
+.foto-card {
+    border-radius:  8px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.formulario{ 
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario {
+    padding: 20px;
+    background-color: #d1cccc;
+    margin: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.formulario h3 {
+    font-size: 30px;
+    margin-left: 140px;
+    margin-top: 20px;
+    color: goldenrod;
+
+}
+ 
+.formulario textarea {
+    font-size: 30px;
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 70%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#nome{
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 140px;
+}
+#telefone{
+    width: 47%;
+    border-radius: 10px;
+    margin-left: 140px;
+}
+#idade{ 
+    width: 20%;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+ 
+h5{
+    color: goldenrod;
+}
+.mapa iframe{
+    margin-top: 20px;
+    width: 75%;
+    height: 350px;
+    border-radius: 10px;
+    border: 10px solid #141212;
+}
+.rodape{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+justify-content: space-around;
+text-align: center;
+border: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Ajustes gerais para telas menores */
+    .sobre-empresa {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-sobre {
+        width: 90%;
+    }
+
+    .grupo-cards {
+        justify-content: center;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .formulario h3, 
+    .formulario textarea, 
+    #nome, #telefone, #idade {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .mapa iframe {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para tablets e telas menores */
+    header nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu, .perfil {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .grupo-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para smartphones */
+    .sobre-empresa {
+        padding: 10px;
+    }
+
+    .foto-sobre {
+        width: 100%;
+    }
+
+    .formulario h3 {
+        font-size: 24px;
+    }
+
+    .formulario textarea {
+        height: 60px;
+    }
+
+    .mapa iframe {
+        height: 250px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
